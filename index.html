@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b46">
+  <title>Позновайка — әлемді таны</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#home" aria-label="Позновайка басты бет"><span class="brand-mark">P</span><span>позновайка<small>БІЛІМ АЛ. ӘЛЕМДІ ТАНЫ.</small></span></a>
+<nav id="mainNav"><a href="#home" data-nav="home">Басты бет</a><a href="#countries" data-nav="countries">Елдер</a><a href="#map" data-nav="map">Әлем картасы</a><a href="#quiz" data-nav="quiz">Викторина</a><a href="#about" data-nav="about">Жоба туралы</a></nav>
+<div class="head-actions"><button class="icon-btn" id="themeToggle" aria-label="Тақырыпты ауыстыру">☾</button><button class="menu-btn" id="menuToggle" aria-label="Мәзір">☰</button></div></header>
+<main id="app" tabindex="-1"><div class="loading"><span class="spinner"></span><p>Әлем жүктеліп жатыр…</p></div></main>
+<footer><div class="footer-brand"><span class="brand-mark">P</span><div><b>Позновайка</b><p>Білім арқылы әлемді жақындатамыз.</p></div></div><div class="footer-links"><a href="#countries">Елдер</a><a href="#quiz">Викторина</a><a href="#about">Біз туралы</a></div><small>© <span id="year"></span> Позновайка · Білім бәріне ортақ</small></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script><script src="script.js"></script>
+</body></html>
